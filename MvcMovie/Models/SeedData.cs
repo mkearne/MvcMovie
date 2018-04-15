@@ -13,6 +13,7 @@ namespace MvcMovie.Models
                 serviceProvider.GetRequiredService<DbContextOptions<MvcMovieContext>>()))
             {
                 // Look for any movies.
+                // Test stuff
                 if (context.Movie.Any())
                 {
                     return;   // DB has been seeded
